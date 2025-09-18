@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Modal, Button, DatePicker } from 'antd';
 import { Controller, useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
@@ -33,7 +33,6 @@ const BookModal: React.FC<BookModalProps> = ({ isOpen, onClose, initialData, onS
     formState: { errors },
   } = useForm<BookFormData>();
 const queryClient = useQueryClient();
- const[loading,isLoading] = useState(false)
   useEffect(() => {
     reset(initialData || {});
   }, [initialData, reset]);
@@ -70,13 +69,11 @@ const updateBookMutation = useMutation({
 });
 
 const onSubmit = (data: BookFormData) => {
-  isLoading(true)
   if (initialData?.id) {
     updateBookMutation.mutate({ id: String(initialData.id), data });
   } else {
     addBookMutation.mutate(data);
   } 
-    isLoading(false)
 };
 
   return (

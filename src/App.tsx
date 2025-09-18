@@ -1,26 +1,3 @@
-// import { ToastContainer } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-// import SidebarMenu from './components/SidebarMenu';
-// import { useUser } from '@clerk/clerk-react';
-
-
-// function App() {
-//   const {user} = useUser();
-//   console.log('====================================');
-//   console.log(user?.firstName,"user");
-//   console.log('====================================');
- 
-
-//   return (
-//     <>
-//         <SidebarMenu />
-//       <ToastContainer />
-//     </>
-//   );
-// }
-
-// export default App;
-
 
 import {  Route, Routes, useNavigate } from 'react-router-dom';
 import SidebarMenu from './components/SidebarMenu';
@@ -42,6 +19,7 @@ const App = () => {
       navigate('/dashboard');
     }
   }, [isLoaded, user]);
+ 
   return (
     <>
       <SidebarMenu />
