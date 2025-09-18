@@ -39,11 +39,18 @@ A responsive and feature-rich **Book Management System** built with **React + Vi
 
 ## 📸 Screenshots
 
-> Place these in a `/screenshots` folder in your project root.
+| 📋 Dashboard | ➕ Add Book | 📆 Today’s Books |
+|--------------|------------|------------------|
+| ![](./screenshots/dashboard.png) | ![](./screenshots/addbook.png) | ![](./screenshots/today.png) |
 
-| 📋 Dashboard | ➕ Add Book | 🧰 Filters |
-|--------------|------------|-----------|
-| ![](../../book-management-app/public/dashboard.png) | ![](../../book-management-app/public/addbook.png) | ![](../../book-management-app/public/today.png) |![](../../book-management-app/public/filter.png)
+| 🧰 Filters |
+|------------|
+| ![](./screenshots/filter.png) |
+
+| 🧰 edit |
+|------------|
+| ![](./screenshots/edit.png) |
+
 
 ---
 
