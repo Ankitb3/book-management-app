@@ -292,9 +292,9 @@ const BookList = () => {
                     let color = 'red';
                     let text = status;
 
-                    if (status.toLowerCase() === 'available') {
+                    if (status?.toLowerCase() === 'available') {
                       color = 'green';
-                    } else if (status.toLowerCase() === 'issued') {
+                    } else if (status?.toLowerCase() === 'issued') {
                       color = 'red';
                     } else {
                       color = 'default';
